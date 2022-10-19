@@ -65,15 +65,22 @@ public class Proyecto2 {
         numeroDecimalList[3]=6.4;
         numeroDecimalList[4]=3.9;
         
-        
-        for (var i = 0; i < numeroList.length; i++) {
-            System.out.println(numeroList[i]);
+        System.out.println(" Ingrese la dimensión del vector ");
+        var dimension = new Scanner(System.in);
+        var valor = dimension.nextInt();
+        var num = new int[valor];
+        var p=valor;
+        var variable=0;
+        for (int i = 0; i < p; i++) {
+            System.out.println("Ingrese los valores ");
+            var leer = new Scanner(System.in);
+            variable = leer.nextInt();
+            num[i]=variable;
         }
-        for (var i = 0; i < numeroDecimalList.length; i++) {
-            System.out.println(numeroDecimalList[i]);
+         System.out.println("Los numeros ingresados son: ");
+        for(int i = 0; i < p; i++) {
+        System.out.println(num[i]);
         }
- 
-        
     }
 
 }
